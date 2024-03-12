@@ -418,6 +418,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .title-box h2 {
