@@ -345,3 +345,47 @@ h1 {
 .features-container li i {
     margin-right: 10px;
 }
+
+.downloads-container {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.download-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.33% - 20px); /* Adjust as needed for spacing */
+    margin-bottom: 20px;
+}
+
+.download-item h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.download-item p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.download-item .btn {
+    background-color: #ff4444;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.download-item .btn:hover {
+    background-color: #ff6666;
+}
