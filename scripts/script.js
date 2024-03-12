@@ -32,7 +32,7 @@ function closeModal() {
     document.getElementById('myModal').style.display = "none";
 }
 // Navigation
-document.querySelectorAll('.menu-bar a').forEach(anchor => {
+document.querySelectorAll('.menu-bar a:not([target="_blank"])').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         
