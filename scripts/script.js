@@ -31,6 +31,7 @@ function openModal() {
 function closeModal() {
     document.getElementById('myModal').style.display = "none";
 }
+// Navigation
 document.querySelectorAll('.menu-bar a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -45,3 +46,23 @@ document.querySelectorAll('.menu-bar a').forEach(anchor => {
         });
     });
 });
+
+// Autorun Sliders
+// Get all slides and initialize index
+var slides = document.querySelectorAll('.mySlides');
+var currentSlideIndex = 0;
+
+// Function to show the next slide
+function showNextSlide() {
+    // Hide the current slide
+    slides[currentSlideIndex].style.display = 'none';
+    
+    // Increment index or reset to 0 if it reaches the last slide
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    
+    // Show the next slide
+    slides[currentSlideIndex].style.display = 'block';
+}
+
+// Call showNextSlide function every 3 seconds
+setInterval(showNextSlide, 3000);
