@@ -357,6 +357,12 @@ h1 {
     justify-content: space-between;
 }
 
+.downloads-container h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
 .download-item {
     background-color: #333;
     padding: 20px;
