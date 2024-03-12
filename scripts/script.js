@@ -31,3 +31,17 @@ function openModal() {
 function closeModal() {
     document.getElementById('myModal').style.display = "none";
 }
+document.querySelectorAll('.menu-bar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const offsetTop = targetElement.offsetTop;
+
+        window.scroll({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
