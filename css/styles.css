@@ -408,7 +408,6 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    color: #fff;
 }
 
 blockquote {
@@ -420,11 +419,11 @@ blockquote {
 blockquote p {
     margin: 0;
     font-size: 16px;
-    line-height: 1.5;
-    color: #333;
+    line-height: 2.5;
+    color: #fff;
 }
 
 blockquote strong {
     font-weight: bold;
-    color: #333;
+    color: #fff;
 }
