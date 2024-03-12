@@ -293,6 +293,7 @@ h1 {
     background-color: #222; /* Dark background color */
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .content-wrapper {
