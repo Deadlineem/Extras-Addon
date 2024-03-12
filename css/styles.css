@@ -311,3 +311,37 @@ h1 {
     font-size: 16px;
     line-height: 1.5;
 }
+
+.features-container {
+    background-color: #222; /* Dark background color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.features-container .content-wrapper {
+    max-width: 900px; /* Limiting content width */
+    margin: 0 auto; /* Centering content */
+}
+
+.features-container h2 {
+    color: #fff; /* White text color */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-container li {
+    color: #ccc; /* Light text color */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.features-container li i {
+    margin-right: 10px;
+}
