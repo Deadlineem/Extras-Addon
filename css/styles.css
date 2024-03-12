@@ -170,21 +170,27 @@ h1 {
     margin-bottom: 20px;
 }
 
-.features-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+.feature-box {
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.features-list li {
-    margin-bottom: 10px;
-}
-
-.features-list i {
-    color: #ff4444;
+.feature-box i {
+    font-size: 24px;
     margin-right: 10px;
+    color: #ff4444;
 }
+
+.feature-box p {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0;
+}
+
 .mySlides img {
     width: 100%;
     height: 400px; /* Fixed height */
