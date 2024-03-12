@@ -365,7 +365,7 @@ h1 {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    width: calc(33.33% - 20px); /* Adjust as needed for spacing */
+    width: calc(30% - 20px); /* Adjust as needed for spacing */
     margin-bottom: 20px;
     display: inline-block; /* Display items in a row */
     vertical-align: top; /* Align items at the top */
