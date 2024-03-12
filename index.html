@@ -23,25 +23,56 @@
             font-size: 36px;
             margin-bottom: 30px;
         }
-        .menu-item {
-            background-color: #282828;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 30px;
         }
-        .menu-item:hover {
-            background-color: #353535;
+        .menu li {
+            display: inline;
+            margin-right: 20px;
         }
-        .menu-item a {
+        .menu li:last-child {
+            margin-right: 0;
+        }
+        .menu a {
             color: #ffffff;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
         }
-        .menu-item a:hover {
+        .menu a:hover {
             text-decoration: underline;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-item {
+            width: 300px;
+            margin: 20px;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .textbox {
+            background-color: #282828;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .textbox h2 {
+            color: #ff4444;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .textbox p {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -49,21 +80,31 @@
 
 <div class="container">
     <h1>Extras Addon for YimMenu</h1>
-    <div class="menu-item">
-        <a href="#">Toggle God Mode</a>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Image 1">
+            <div class="textbox">
+                <h2>Feature 1</h2>
+                <p>Description of Feature 1 goes here...</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Image 2">
+            <div class="textbox">
+                <h2>Feature 2</h2>
+                <p>Description of Feature 2 goes here...</p>
+            </div>
+        </div>
+        <!-- Add more gallery items as needed -->
     </div>
-    <div class="menu-item">
-        <a href="#">Unlimited Ammo</a>
-    </div>
-    <div class="menu-item">
-        <a href="#">Unlock All Levels</a>
-    </div>
-    <div class="menu-item">
-        <a href="#">Infinite Health</a>
-    </div>
-    <!-- Add more menu items as needed -->
 </div>
 
 </body>
 </html>
- 
