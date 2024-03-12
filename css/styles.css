@@ -404,10 +404,35 @@ h1 {
 }
 
 .how-to-use-container {
-    background-color: #121212;
-    padding: 20px;
+    background-color: #f8f8f8;
     border-radius: 10px;
     margin-bottom: 20px;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.title-box {
+    background-color: #ff4444;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-box h2 {
+    margin: 0;
+}
+
+.title-box i {
+    font-size: 18px;
+}
+
+.content-box {
+    padding: 0 20px;
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Transition effect */
 }
 
 blockquote {
@@ -419,11 +444,12 @@ blockquote {
 blockquote p {
     margin: 0;
     font-size: 16px;
-    line-height: 2.5;
-    color: #fff;
+    line-height: 1.5;
+    color: #333;
 }
 
 blockquote strong {
     font-weight: bold;
-    color: #fff;
+    color: #333;
 }
+
