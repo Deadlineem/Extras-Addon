@@ -31,6 +31,3 @@ function openModal() {
 function closeModal() {
     document.getElementById('myModal').style.display = "none";
 }
-document.addEventListener('contextmenu', function(event) {
-        event.preventDefault();
-    });
