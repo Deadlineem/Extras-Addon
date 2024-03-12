@@ -361,7 +361,7 @@ h1 {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    width: calc(33.33% - 20px); /* Adjust as needed for spacing */
+    width: calc(26% - 20px); /* Adjust as needed for spacing */
     margin-bottom: 20px;
 }
 
