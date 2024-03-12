@@ -404,14 +404,14 @@ h1 {
 }
 
 .how-to-use-container {
-    background-color: #f8f8f8;
+    background-color: #222;
     border-radius: 10px;
     margin-bottom: 20px;
     overflow: hidden; /* Hide overflow content */
 }
 
 .title-box {
-    background-color: #ff4444;
+    background-color: #ff6666;
     color: #fff;
     padding: 20px;
     cursor: pointer;
@@ -445,11 +445,11 @@ blockquote p {
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
+    color: #fff;
 }
 
 blockquote strong {
     font-weight: bold;
-    color: #333;
+    color: #fff;
 }
 
