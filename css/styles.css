@@ -352,23 +352,24 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    text-align: center; /* Center the content horizontally */
 }
 
 .downloads-container h2 {
     color: #fff;
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .download-item {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    width: calc(30% - 20px); /* Adjust as needed for spacing */
+    width: calc(33.33% - 20px); /* Adjust as needed for spacing */
     margin-bottom: 20px;
+    display: inline-block; /* Display items in a row */
+    vertical-align: top; /* Align items at the top */
+    text-align: left; /* Align item content to the left */
 }
 
 .download-item h3 {
@@ -390,7 +391,6 @@ h1 {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    display: inline-block;
 }
 
 .download-item .btn:hover {
@@ -402,5 +402,6 @@ h1 {
         width: calc(50% - 20px); /* Adjust as needed for spacing */
     }
 }
+
 
 
