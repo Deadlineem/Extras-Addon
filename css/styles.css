@@ -404,10 +404,11 @@ h1 {
 }
 
 .how-to-use-container {
-    background-color: #f8f8f8;
+    background-color: #121212;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 blockquote {
