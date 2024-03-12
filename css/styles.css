@@ -403,6 +403,27 @@ h1 {
     }
 }
 
+.how-to-use-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 
+blockquote {
+    font-style: italic;
+    padding: 20px;
+    border-left: 5px solid #ff4444; /* Red border on the left */
+}
 
+blockquote p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
 
+blockquote strong {
+    font-weight: bold;
+    color: #333;
+}
