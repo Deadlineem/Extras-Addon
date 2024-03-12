@@ -391,3 +391,10 @@ h1 {
     background-color: #ff6666;
 }
 
+@media (max-width: 768px) {
+    .download-item {
+        width: calc(50% - 20px); /* Adjust as needed for spacing */
+    }
+}
+
+
