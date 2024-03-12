@@ -66,3 +66,8 @@ function showNextSlide() {
 
 // Call showNextSlide function every 3 seconds
 setInterval(showNextSlide, 3000);
+
+function toggleHowToUse() {
+    var contentBox = document.querySelector('.how-to-use-container .content-box');
+    contentBox.style.maxHeight = contentBox.style.maxHeight === '0px' ? contentBox.scrollHeight + 'px' : '0px';
+}
