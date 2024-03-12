@@ -352,8 +352,8 @@ h1 {
     border-radius: 10px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .download-item {
@@ -389,3 +389,4 @@ h1 {
 .download-item .btn:hover {
     background-color: #ff6666;
 }
+
