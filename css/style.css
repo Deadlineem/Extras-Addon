@@ -239,7 +239,7 @@ h1 {
 .feature-boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Adjust alignment as needed */
+    justify-content: space-evenly; /* Adjust alignment as needed */
 }
 
 .feature-box {
