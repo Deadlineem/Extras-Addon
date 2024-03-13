@@ -19,6 +19,7 @@
     border-radius: 6px;
     border: 3px solid #1a1a1a;
 }
+
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
@@ -26,6 +27,7 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Base font size */
 }
 
 .container {
@@ -103,6 +105,7 @@ h1 {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
 }
 
 .menu-bar li a:hover {
@@ -116,35 +119,23 @@ h1 {
 
 .mySlides img {
     width: 100%;
-    height: 400px; /* Fixed height */
-    object-fit: cover; /* Added */
-}
-
-.info-box {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
+    height: auto;
+    object-fit: cover;
 }
 
 .info-box h2 {
-    color: #ff4444;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .info-box p {
-    color: #ffffff;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 0;
 }
 
-/* Next and previous buttons */
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -171,7 +162,8 @@ h1 {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -186,8 +178,8 @@ h1 {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* Modal Content */
@@ -239,11 +231,11 @@ h1 {
 .feature-boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Adjust alignment as needed */
+    justify-content: space-between;
 }
 
 .feature-box {
-    width: calc(20% - 20px); /* Adjust width and spacing as needed */
+    width: calc(33.33% - 20px); /* 33.33% to have three items per row */
     background-color: #282828;
     border-radius: 10px;
     padding: 20px;
@@ -272,6 +264,7 @@ h1 {
     object-fit: cover; /* Added */
     pointer-events: none; /* Prevent mouse events */
 }
+
 .btn {
     display: inline-block;
     padding: 8px 16px;
@@ -280,53 +273,51 @@ h1 {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
 }
 
 .btn:hover {
     background-color: #606060;
     color: #ffffff;
-    text-decoration: none;
 }
 
 .about-container {
-    background-color: #222; /* Dark background color */
+    background-color: #222;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .content-wrapper {
-    max-width: 900px; /* Limiting content width */
-    margin: 0 auto; /* Centering content */
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .about-container h2 {
-    color: #fff; /* White text color */
+    color: #fff;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .about-container p {
-    color: #ccc; /* Light text color */
+    color: #ccc;
     font-size: 16px;
     line-height: 1.5;
 }
 
 .features-container {
-    background-color: #222; /* Dark background color */
+    background-color: #222;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .features-container .content-wrapper {
-    max-width: 900px; /* Limiting content width */
-    margin: 0 auto; /* Centering content */
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .features-container h2 {
-    color: #fff; /* White text color */
+    color: #fff;
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -337,7 +328,7 @@ h1 {
 }
 
 .features-container li {
-    color: #ccc; /* Light text color */
+    color: #ccc;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -352,7 +343,7 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    text-align: center; /* Center the content horizontally */
+    text-align: center;
 }
 
 .downloads-container h2 {
@@ -365,11 +356,11 @@ h1 {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    width: calc(30% - 20px); /* Adjust as needed for spacing */
+    width: calc(30% - 20px);
     margin-bottom: 20px;
-    display: inline-block; /* Display items in a row */
-    vertical-align: top; /* Align items at the top */
-    text-align: center; /* Center text horizontally */
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
 }
 
 .download-item h3 {
@@ -397,17 +388,11 @@ h1 {
     background-color: #ff6666;
 }
 
-@media (max-width: 768px) {
-    .download-item {
-        width: calc(50% - 20px); /* Adjust as needed for spacing */
-    }
-}
-
 .how-to-use-container {
     background-color: #222;
     border-radius: 10px;
     margin-bottom: 20px;
-    overflow: hidden; /* Hide overflow content */
+    overflow: hidden;
 }
 
 .title-box {
@@ -431,139 +416,7 @@ h1 {
 
 .content-box {
     padding: 0 20px;
-    max-height: 0; /* Initially hidden */
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease; /* Transition effect */
-}
-
-blockquote {
-    font-style: italic;
-    padding: 20px;
-    border-left: 5px solid #ff4444; /* Red border on the left */
-}
-
-blockquote p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 2.5;
-    color: #fff;
-}
-
-blockquote strong {
-    font-weight: bold;
-    color: #fff;
-}
-/* Responsive styles */
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 32px;
-    }
-
-    .menu a {
-        font-size: 16px;
-    }
-
-    .info-box h2 {
-        font-size: 20px;
-    }
-
-    .info-box p {
-        font-size: 14px;
-    }
-
-    .features-container h2 {
-        font-size: 24px;
-    }
-
-    .features-container li {
-        font-size: 14px;
-    }
-
-    .download-item h3 {
-        font-size: 18px;
-    }
-
-    .download-item p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding-top: 30px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    .menu a {
-        font-size: 14px;
-    }
-
-    .info-box h2 {
-        font-size: 18px;
-    }
-
-    .info-box p {
-        font-size: 12px;
-    }
-
-    .features-container h2 {
-        font-size: 20px;
-    }
-
-    .features-container li {
-        font-size: 12px;
-    }
-
-    .download-item h3 {
-        font-size: 16px;
-    }
-
-    .download-item p {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 576px) {
-    h1 {
-        font-size: 24px;
-    }
-
-    .menu li {
-        display: block;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-
-    .menu-bar ul {
-        flex-direction: column;
-    }
-
-    .menu-bar li {
-        margin: 0;
-    }
-
-    .menu-bar li a {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .features-container h2 {
-        font-size: 18px;
-    }
-
-    .features-container li {
-        font-size: 12px;
-    }
-
-    .download-item h3 {
-        font-size: 14px;
-    }
-
-    .download-item p {
-        font-size: 10px;
-    }
+    transition: max-height 0.3s ease;
 }
