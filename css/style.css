@@ -76,10 +76,11 @@ h1 {
 }
 
 .menu-bar {
-    background-color: #111111;
+    background-color: #1a1a1a;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .menu-bar a {
