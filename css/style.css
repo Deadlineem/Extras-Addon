@@ -19,6 +19,7 @@
     border-radius: 6px;
     border: 3px solid #1a1a1a;
 }
+
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
@@ -243,7 +244,7 @@ h1 {
 }
 
 .feature-box {
-    width: calc(20% - 20px); /* Adjust width and spacing as needed */
+    width: calc(33.33% - 20px); /* Adjust width and spacing as needed */
     background-color: #282828;
     border-radius: 10px;
     padding: 20px;
@@ -252,6 +253,21 @@ h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.feature-box:nth-child(3n-2) {
+    float: left;
+    margin-right: 20px;
+}
+
+.feature-box:nth-child(3n-1) {
+    float: none;
+    margin: 0 10px;
+}
+
+.feature-box:nth-child(3n) {
+    float: right;
+    margin-left: 20px;
 }
 
 .feature-box i {
@@ -398,58 +414,17 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .download-item {
-        width: calc(50% - 20px); /* Adjust as needed for spacing */
+    .feature-box {
+        width: calc(50% - 20px);
     }
-}
 
-.how-to-use-container {
-    background-color: #222;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    overflow: hidden; /* Hide overflow content */
-}
+    .feature-box:nth-child(odd) {
+        float: left;
+        margin-right: 20px;
+    }
 
-.title-box {
-    background-color: #ff4444;
-    color: #fff;
-    padding: 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-.title-box h2 {
-    margin: 0;
-}
-
-.title-box i {
-    font-size: 18px;
-}
-
-.content-box {
-    padding: 0 20px;
-    max-height: 0; /* Initially hidden */
-    overflow: hidden;
-    transition: max-height 0.3s ease; /* Transition effect */
-}
-
-blockquote {
-    font-style: italic;
-    padding: 20px;
-    border-left: 5px solid #ff4444; /* Red border on the left */
-}
-
-blockquote p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 2.5;
-    color: #fff;
-}
-
-blockquote strong {
-    font-weight: bold;
-    color: #fff;
+    .feature-box:nth-child(even) {
+        float: right;
+        margin-left: 20px;
+    }
 }
