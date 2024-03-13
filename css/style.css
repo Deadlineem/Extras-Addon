@@ -250,7 +250,7 @@ h1 {
 }
 
 .feature-box {
-    width: calc(33.33% - 20px); /* Adjust width and spacing as needed */
+    width: calc(30% - 20px); /* Adjust width and spacing as needed */
     background-color: #282828;
     border-radius: 10px;
     padding: 20px;
@@ -264,7 +264,7 @@ h1 {
 
 @media (max-width: 1024px) {
     .feature-box {
-        width: calc(50% - 20px); /* Adjust width for smaller screens */
+        width: calc(30% - 20px); /* Adjust width for smaller screens */
     }
 }
 
