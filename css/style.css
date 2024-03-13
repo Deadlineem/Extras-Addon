@@ -218,10 +218,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-.features-container {
-    margin-top: 50px;
-}
-
 .features-container h2 {
     color: #ff4444;
     font-size: 28px;
@@ -235,7 +231,7 @@ h1 {
 }
 
 .feature-box {
-    width: calc(33.33% - 20px); /* 33.33% to have three items per row */
+    width: calc(25% - 20px); /* 33.33% to have three items per row */
     background-color: #282828;
     border-radius: 10px;
     padding: 20px;
