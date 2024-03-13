@@ -29,10 +29,10 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 h1 {
@@ -44,7 +44,7 @@ h1 {
 .menu {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .menu li {
