@@ -390,7 +390,7 @@ h1 {
 }
 
 .how-to-use-container {
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.4);
     border-radius: 10px;
     margin-bottom: 20px;
     overflow: hidden; /* Hide overflow content */
