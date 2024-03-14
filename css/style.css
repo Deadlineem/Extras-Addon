@@ -104,7 +104,7 @@ h1 {
 
 .menu-bar li a {
     color: white;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -127,7 +127,7 @@ h1 {
 }
 
 .info-box {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     position: absolute;
     bottom: 0;
@@ -224,21 +224,12 @@ h1 {
 
 .features-container {
     margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .features-container h2 {
     color: #ff4444;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.features-container {
-    margin-top: 50px;
-}
-
-.features-container h2 {
-    color: #ff4444;
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
@@ -250,7 +241,7 @@ h1 {
 
 .feature-box {
     width: 30%; /* Adjust width and spacing as needed */
-    background-color: #282828;
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
