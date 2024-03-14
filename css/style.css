@@ -237,6 +237,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; /* Adjust alignment as needed */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .feature-box {
