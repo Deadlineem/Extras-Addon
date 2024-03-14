@@ -81,7 +81,7 @@ h1 {
 }
 
 .menu-bar {
-    background-color: #1a1a1a;
+    background-color: rgba(0, 0, 0, 0.0);
     display: flex;
     justify-content: center;
     margin-top: 20px;
