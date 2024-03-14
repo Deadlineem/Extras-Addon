@@ -237,9 +237,7 @@ h1 {
 }
 
 .feature-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* Adjust alignment as needed */
+     /* Adjust alignment as needed */
 }
 
 .feature-box {
