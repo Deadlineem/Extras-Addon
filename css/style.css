@@ -237,7 +237,8 @@ h1 {
 }
 
 .feature-boxes {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly; /* Adjust alignment as needed */
 }
 
@@ -247,8 +248,7 @@ h1 {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     align-items: center;
     text-align: center;
 }
