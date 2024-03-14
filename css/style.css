@@ -113,7 +113,8 @@ h1 {
 }
 
 .menu-bar li a {
-    color: #000;
+    color: #fff;
+    background-color: #1a1a1a;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
