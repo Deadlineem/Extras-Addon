@@ -20,18 +20,8 @@
     border: 3px solid #1a1a1a;
 }
 /* Global styles */
-
-@font-face {
-    font-family: 'pricedownblack';
-    src: url('pricedown_bl-webfont.woff2') format('woff2'),
-         url('pricedown_bl-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body {
-    font-family: 'pricedownblack';
+    font-family: Arial, sans-serif;
     background-color: #1a1a1a;
     background-image: url("../img/bg-1.png");
     background-repeat: no-repeat;
@@ -74,7 +64,7 @@ h1 {
 .menu a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -91,7 +81,7 @@ h1 {
 }
 
 .menu-bar {
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: #1a1a1a;
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -113,8 +103,8 @@ h1 {
 }
 
 .menu-bar li a {
-    color: #fff;
-    background-color: #1a1a1a;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -148,13 +138,13 @@ h1 {
 
 .info-box h2 {
     color: #ff4444;
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .info-box p {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 0;
 }
@@ -238,7 +228,7 @@ h1 {
 
 .features-container h2 {
     color: #ff4444;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -248,7 +238,7 @@ h1 {
 
 .features-container h2 {
     color: #ff4444;
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
@@ -319,13 +309,13 @@ h1 {
 
 .about-container h2 {
     color: #fff; /* White text color */
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .about-container p {
     color: #ccc; /* Light text color */
-    font-size: 25px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -343,7 +333,7 @@ h1 {
 
 .features-container h2 {
     color: #fff; /* White text color */
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
@@ -354,7 +344,7 @@ h1 {
 
 .features-container li {
     color: #ccc; /* Light text color */
-    font-size: 25px;
+    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
 }
@@ -373,7 +363,7 @@ h1 {
 
 .downloads-container h2 {
     color: #fff;
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
@@ -390,13 +380,13 @@ h1 {
 
 .download-item h3 {
     color: #fff;
-    font-size: 35px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .download-item p {
     color: #ccc;
-    font-size: 25px;
+    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
 }
@@ -442,7 +432,7 @@ h1 {
 }
 
 .title-box i {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .content-box {
@@ -460,7 +450,7 @@ blockquote {
 
 blockquote p {
     margin: 0;
-    font-size: 25px;
+    font-size: 16px;
     line-height: 2.5;
     color: #fff;
 }
