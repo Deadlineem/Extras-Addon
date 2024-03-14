@@ -26,7 +26,7 @@ body {
     background-image: url("../img/bg-2.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     color: #ffffff;
     margin: 0;
     padding: 0;
