@@ -31,6 +31,7 @@
 }
 
 body {
+    font-family: 'pricedownblack';
     background-color: #1a1a1a;
     background-image: url("../img/bg-1.png");
     background-repeat: no-repeat;
