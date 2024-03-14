@@ -276,7 +276,7 @@ h1 {
 }
 
 .about-container {
-    background-color: #222; /* Dark background color */
+    background-color: rgba(34, 34, 34, 0.4);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
