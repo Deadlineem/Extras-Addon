@@ -65,7 +65,7 @@ function showNextSlide() {
 }
 
 // Call showNextSlide function every 3 seconds
-setInterval(showNextSlide, 3000);
+setInterval(showNextSlide, 5000);
 
 function toggleHowToUse() {
     var contentBox = document.querySelector('.how-to-use-container .content-box');
