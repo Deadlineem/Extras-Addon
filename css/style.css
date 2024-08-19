@@ -167,11 +167,14 @@ h1 {
         position: static;
         background-color: rgba(0, 0, 0, 0.9);
         max-height: 0; /* Hidden by default */
+        overflow: hidden; /* Prevents showing a small section */
         display: flex;
-        padding: 20px 0;
+        padding: 0; /* No padding when hidden */
+        transition: max-height 0.3s ease;
     }
 
     .menu-bar.active ul {
+        padding: 20px 0; /* Add padding when expanded */
         max-height: 500px; /* Enough height to show all items */
     }
 
