@@ -165,7 +165,7 @@ h1 {
     .menu-bar ul {
         flex-direction: column;
         position: static;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.2);
         max-height: 0; /* Hidden by default */
         overflow: hidden; /* Prevents showing a small section */
         display: flex;
