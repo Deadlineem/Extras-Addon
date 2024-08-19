@@ -102,8 +102,8 @@ h1 {
 .menu-bar {
     background-color: rgba(0, 0, 0, 0);
     display: flex;
-    justify-content: space-between; /* Space between for hamburger and menu */
-    align-items: center; /* Center align hamburger */
+    justify-content: center; /* Center-align the hamburger */
+    align-items: center;
     margin-top: 20px;
     position: relative;
     padding: 0 20px;
@@ -156,19 +156,24 @@ h1 {
 /* Mobile styles */
 @media (max-width: 770px) {
     .menu-bar {
-        justify-content: space-between;
-        padding: 0 20px;
+        justify-content: center;
     }
 
     .menu-bar ul {
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: -300px; /* Position the menu above the slideshow */
         left: 0;
         right: 0;
         background-color: rgba(0, 0, 0, 0.9);
         display: none;
         z-index: 9; /* Ensure menu stays below the hamburger */
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu-bar.active ul {
+        display: flex;
     }
 
     .menu-bar li {
@@ -179,8 +184,9 @@ h1 {
         display: flex;
     }
 
-    .menu-bar.active ul {
-        display: flex;
+    /* Adjust slideshow container positioning when menu is expanded */
+    .menu-bar.active ~ .slideshow-container {
+        margin-top: 300px; /* Push slideshow down when menu expands */
     }
 }
 
