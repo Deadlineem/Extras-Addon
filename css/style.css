@@ -160,12 +160,12 @@ h1 {
         padding: 0;
         position: relative;
         justify-content: center;
+        background-color: rgba(0, 0, 0, 0.2);
     }
 
     .menu-bar ul {
         flex-direction: column;
         position: static;
-        background-color: rgba(0, 0, 0, 0.2);
         max-height: 0; /* Hidden by default */
         overflow: hidden; /* Prevents showing a small section */
         display: flex;
