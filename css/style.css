@@ -1,4 +1,389 @@
-/* Mobile-Friendly Styles */
+/* Scrollbar styles */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ff4444 #1a1a1a;
+}
+
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff4444;
+    border-radius: 6px;
+    border: 3px solid #1a1a1a;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    background-image: url("https://i.ibb.co/4K4mRtP/bg-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    max-width: 100%;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1 {
+    color: #ff4444;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: none;
+}
+
+/* Styles for the slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.menu-bar {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menu-bar a {
+    text-decoration: none;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-bar li {
+    margin: 0 10px;
+}
+
+.menu-bar li a {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-bar li a:hover {
+    background-color: #ff4444;
+    color: #1a1a1a;
+}
+
+.mySlides {
+    position: relative;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.info-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.info-box h2 {
+    color: #ff4444;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Next and previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.feature-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.feature-box {
+    width: 30%;
+    background-color: rgba(34, 34, 34, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-box i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff4444;
+}
+
+.feature-box p {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ff4444;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #606060;
+    color: #ffffff;
+}
+
+.about-container {
+    background-color: rgba(34, 34, 34, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.features-container {
+    background-color: rgba(34, 34, 34, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.features-container .content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.features-container h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-container li {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.features-container li i {
+    margin-right: 10px;
+}
+
+.downloads-container {
+    background-color: rgba(34, 34, 34, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.downloads-container h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.download-item {
+    background-color: rgba(34, 34, 34, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(30% - 20px);
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.download-item h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.download-item p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.download-item .btn {
+    background-color: #ff4444;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.download-item .btn:hover {
+    background-color: #ff6666;
+}
+
 @media (max-width: 768px) {
     /* Make the menu vertical and centered */
     .menu {
@@ -10,7 +395,7 @@
     .menu li {
         display: block;
         margin-bottom: 10px;
-        margin-right: 0; /* Remove right margin */
+        margin-right: 0;
     }
 
     .menu li:last-child {
@@ -22,7 +407,6 @@
         max-width: 100%;
     }
 
-    /* Adjust the text and button sizes for better readability */
     h1 {
         font-size: 28px;
     }
@@ -40,18 +424,16 @@
     }
 
     .feature-box {
-        width: 90%; /* Make the boxes take more width */
+        width: 90%;
         margin-bottom: 15px;
     }
 
-    /* Stack download items vertically */
     .download-item {
         width: 100%;
         margin-bottom: 20px;
     }
 }
 
-/* Mobile-Specific Styles for Even Smaller Screens */
 @media (max-width: 480px) {
     h1 {
         font-size: 24px;
@@ -69,4 +451,3 @@
         font-size: 12px;
     }
 }
-
