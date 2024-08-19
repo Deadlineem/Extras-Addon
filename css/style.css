@@ -104,9 +104,9 @@ h1 {
     display: flex;
     justify-content: center; /* Center-align the hamburger */
     align-items: center;
-    margin-top: 20px;
     position: relative;
     padding: 0 20px;
+    z-index: 10; /* Keep it above other elements */
 }
 
 .menu-bar ul {
@@ -114,9 +114,10 @@ h1 {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
 }
 
 .menu-bar li {
@@ -142,7 +143,6 @@ h1 {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    z-index: 10; /* Ensure hamburger stays on top */
 }
 
 .hamburger span {
@@ -156,24 +156,23 @@ h1 {
 /* Mobile styles */
 @media (max-width: 770px) {
     .menu-bar {
+        flex-direction: column;
+        padding: 0;
+        position: relative;
         justify-content: center;
     }
 
     .menu-bar ul {
         flex-direction: column;
-        position: absolute;
-        top: -300px; /* Position the menu above the slideshow */
-        left: 0;
-        right: 0;
+        position: static;
         background-color: rgba(0, 0, 0, 0.9);
-        display: none;
-        z-index: 9; /* Ensure menu stays below the hamburger */
-        padding-top: 20px;
-        padding-bottom: 20px;
+        max-height: 0; /* Hidden by default */
+        display: flex;
+        padding: 20px 0;
     }
 
     .menu-bar.active ul {
-        display: flex;
+        max-height: 500px; /* Enough height to show all items */
     }
 
     .menu-bar li {
@@ -184,9 +183,9 @@ h1 {
         display: flex;
     }
 
-    /* Adjust slideshow container positioning when menu is expanded */
+    /* Push down the slideshow when menu is active */
     .menu-bar.active ~ .slideshow-container {
-        margin-top: 300px; /* Push slideshow down when menu expands */
+        margin-top: 250px;
     }
 }
 
