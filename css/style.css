@@ -39,6 +39,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+    max-width: 100%;
     color: #ffffff;
     margin: 0;
     padding: 0;
