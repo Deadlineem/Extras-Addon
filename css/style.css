@@ -1,3 +1,15 @@
+@media (max-width: 1000px) {
+    .feature-box {
+        width: 45%; /* Two columns on tablet screens */
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 780px) {
+    .feature-box {
+        width: 100%; /* Single column on small screens */
+    }
+}
 /* Scrollbar styles */
 /* Works on Firefox */
 * {
